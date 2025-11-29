@@ -1,0 +1,356 @@
+[
+  {
+    "id": "1",
+    "dni": "00000001",
+    "name": "Colala Sandoval Juan Carlos",
+    "position": "Administrador"
+  },
+  {
+    "id": "2",
+    "dni": "00000002",
+    "name": "Ruiz Sandoval Gerardo Alexis",
+    "position": "Administrador"
+  },
+  {
+    "id": "3",
+    "dni": "71980251",
+    "name": "Cruz Alvis Michael Edu",
+    "position": "Supervisor"
+  },
+  {
+    "id": "4",
+    "dni": "72515257",
+    "name": "Quiñones Villegas Jasmin Isabel",
+    "position": "Supervisor"
+  },
+  {
+    "id": "46",
+    "dni": "74879760",
+    "name": "Samaniego Lalangui Sandra Danixsa",
+    "position": "Supervisor"
+  },
+  {
+    "id": "5",
+    "dni": "71322199",
+    "name": "Arbulú Orozco Jorge Armando Mauricio",
+    "position": "Digitador"
+  },
+  {
+    "id": "6",
+    "dni": "76598971",
+    "name": "Silva Rios Marvin Dianthony",
+    "position": "Empadronador"
+  },
+  {
+    "id": "7",
+    "dni": "72036785",
+    "name": "Colunche Perez Jhorison Paul",
+    "position": "Empadronador"
+  },
+  {
+    "id": "8",
+    "dni": "71034239",
+    "name": "Agreda Amari Fernando",
+    "position": "Empadronador"
+  },
+  {
+    "id": "9",
+    "dni": "71096271",
+    "name": "Garcia Yojahuanca Jhan Carlos",
+    "position": "Empadronador"
+  },
+  {
+    "id": "10",
+    "dni": "75917569",
+    "name": "Coronel Castillo Lely Yanelith",
+    "position": "Empadronador"
+  },
+  {
+    "id": "11",
+    "dni": "75831023",
+    "name": "Vasquez Vallejos Yanet",
+    "position": "Empadronador"
+  },
+  {
+    "id": "12",
+    "dni": "72938316",
+    "name": "Diaz Tenoro Dányelo",
+    "position": "Empadronador"
+  },
+  {
+    "id": "13",
+    "dni": "72112845",
+    "name": "Salazar Llontop Fabricio",
+    "position": "Empadronador"
+  },
+  {
+    "id": "14",
+    "dni": "76512378",
+    "name": "Saavedra Barboza Jaime",
+    "position": "Empadronador"
+  },
+  {
+    "id": "15",
+    "dni": "75076751",
+    "name": "Tarrillo Marrufo Euler Michel",
+    "position": "Empadronador"
+  },
+  {
+    "id": "16",
+    "dni": "75151359",
+    "name": "Ramirez Segura Ivan",
+    "position": "Empadronador"
+  },
+  {
+    "id": "17",
+    "dni": "75159651",
+    "name": "Rivera Alvitres Alexis",
+    "position": "Empadronador"
+  },
+  {
+    "id": "18",
+    "dni": "75706895",
+    "name": "Adrianzen Garay Jhair",
+    "position": "Empadronador"
+  },
+  {
+    "id": "19",
+    "dni": "70948104",
+    "name": "Togas Zurita Jane Arely",
+    "position": "Empadronador"
+  },
+  {
+    "id": "20",
+    "dni": "45979653",
+    "name": "Requejo Oliva Robert David",
+    "position": "Empadronador"
+  },
+  {
+    "id": "21",
+    "dni": "70077694",
+    "name": "Quintana Miguel Vega",
+    "position": "Empadronador"
+  },
+  {
+    "id": "22",
+    "dni": "75749035",
+    "name": "Coronel Balcazar Cindy",
+    "position": "Empadronador"
+  },
+  {
+    "id": "23",
+    "dni": "77278184",
+    "name": "Emely Marrufo Clemente",
+    "position": "Empadronador"
+  },
+  {
+    "id": "24",
+    "dni": "71030459",
+    "name": "Campos Rivera Noelita",
+    "position": "Empadronador"
+  },
+  {
+    "id": "25",
+    "dni": "70106575",
+    "name": "Torres Sanchez Carlos",
+    "position": "Empadronador"
+  },
+  {
+    "id": "26",
+    "dni": "75551253",
+    "name": "Bonces Vasquez Brayan Yelsin",
+    "position": "Empadronador"
+  },
+  {
+    "id": "27",
+    "dni": "60160870",
+    "name": "Delgado Perez Maycol Esmith",
+    "position": "Empadronador"
+  },
+  {
+    "id": "28",
+    "dni": "46548382",
+    "name": "Rios Cabrera Sofia Del Carmen",
+    "position": "Empadronador"
+  },
+  {
+    "id": "29",
+    "dni": "75801485",
+    "name": "Contreras Bernilla Erick Omar",
+    "position": "Empadronador"
+  },
+  {
+    "id": "30",
+    "dni": "74845535",
+    "name": "Caballero Chinchay Giuliana Felicia",
+    "position": "Empadronador"
+  },
+  {
+    "id": "31",
+    "dni": "47972122",
+    "name": "Lopez Bustamante Lillian Milagros",
+    "position": "Empadronador"
+  },
+  {
+    "id": "32",
+    "dni": "70042131",
+    "name": "Lozano Paredes Johana",
+    "position": "Empadronador"
+  },
+  {
+    "id": "33",
+    "dni": "75147275",
+    "name": "Maury Hoyos Cristofer Victor",
+    "position": "Empadronador"
+  },
+  {
+    "id": "34",
+    "dni": "75871126",
+    "name": "Arevalo Quintana Diomer",
+    "position": "Empadronador"
+  },
+  {
+    "id": "35",
+    "dni": "61088316",
+    "name": "Teran Chalan John Alexander",
+    "position": "Empadronador"
+  },
+  {
+    "id": "36",
+    "dni": "75337403",
+    "name": "Mejia Mundaca Edilso",
+    "position": "Empadronador"
+  },
+  {
+    "id": "37",
+    "dni": "47878042",
+    "name": "Aragio Díaz Jaime",
+    "position": "Empadronador"
+  },
+  {
+    "id": "38",
+    "dni": "76240501",
+    "name": "Guerrero Gonzales Nieves Rocianllelyth",
+    "position": "Empadronador"
+  },
+  {
+    "id": "39",
+    "dni": "60536938",
+    "name": "Mejia Gonzales Kelly Roxana",
+    "position": "Empadronador"
+  },
+  {
+    "id": "40",
+    "dni": "77103805",
+    "name": "Montoya Vega Manuel",
+    "position": "Empadronador"
+  },
+  {
+    "id": "41",
+    "dni": "74936937",
+    "name": "Mozombite Yaimes Lucila Jeisabel",
+    "position": "Empadronador"
+  },
+  {
+    "id": "42",
+    "dni": "72366331",
+    "name": "Perez Alarcon Lesly Liseth",
+    "position": "Empadronador"
+  },
+  {
+    "id": "43",
+    "dni": "76265157",
+    "name": "Cruz Alvis Homero Leandro",
+    "position": "Empadronador"
+  },
+  {
+    "id": "44",
+    "dni": "75159851",
+    "name": "Rivera Alvitres Alexis",
+    "position": "Empadronador"
+  },
+  {
+    "id": "45",
+    "dni": "73365972",
+    "name": "Vasquez Araujo Carlos Alberto",
+    "position": "Empadronador"
+  },
+  {
+    "id": "47",
+    "dni": "45525130",
+    "name": "Mamayay Ayala Deysi Elizabeth",
+    "position": "Empadronador"
+  },
+  {
+    "id": "48",
+    "dni": "72513028",
+    "name": "Alejandria Huamuro Kevin",
+    "position": "Empadronador"
+  },
+  {
+    "id": "49",
+    "dni": "47219771",
+    "name": "Milagros Isabel Ocupa Diaz",
+    "position": "Empadronador"
+  },
+  {
+    "id": "50",
+    "dni": "42804944",
+    "name": "Natali Peralta Leon",
+    "position": "Empadronador"
+  },
+  {
+    "id": "51",
+    "dni": "62121386",
+    "name": "Desli Yarixa Cruz Neira",
+    "position": "Empadronador"
+  },
+  {
+    "id": "52",
+    "dni": "75700490",
+    "name": "Deisy Natali Garcia Mondragon",
+    "position": "Empadronador"
+  },
+  {
+    "id": "53",
+    "dni": "72686161",
+    "name": "Auri Isabel Ocupa Diaz",
+    "position": "Empadronador"
+  },
+  {
+    "id": "54",
+    "dni": "70926944",
+    "name": "Ada Iris Vierra Garcia",
+    "position": "Empadronador"
+  },
+  {
+    "id": "55",
+    "dni": "75074004",
+    "name": "Cecilia Leslibeth Garcia Vallejos",
+    "position": "Empadronador"
+  },
+  {
+    "id": "56",
+    "dni": "75718682",
+    "name": "Jefferson Javier Jimenez",
+    "position": "Empadronador"
+  },
+  {
+    "id": "57",
+    "dni": "61643970",
+    "name": "Jorge Kevin Vilchez Guona",
+    "position": "Empadronador"
+  },
+  {
+    "id": "58",
+    "dni": "75748175",
+    "name": "Luis Alberto Garcia CalderÃ³n",
+    "position": "Empadronador"
+  },
+  {
+    "id": "59",
+    "dni": "61112456",
+    "name": "Julia Yajaira Neira Quinde",
+    "position": "Empadronador"
+  }
+]
