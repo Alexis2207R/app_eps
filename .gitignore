@@ -43,4 +43,4 @@ app.*.map.json
 /android/app/release
 
 # Ignorar la subida de mapas
-/assets/mbtiles/jaen.mbtiles
+/assets/mbtiles/

@@ -346,14 +346,22 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
   Future<void> _loadEmpadronadorData() async {
     final userId = await _storageSession.read(key: 'user_id');
     final userName = await _storageSession.read(key: 'user_name');
+
+    setState(() {
+      _isLoadingCache = true;
+    });
+
     if (userId != null && userName != null) {
-      _isFillingFromApi = true;
       setState(() {
         _empadronadorId = userId;
         _empadronadorController.text = userName;
       });
-      _isFillingFromApi = false;
     }
+
+    setState(() {
+      _isLoadingCache = false;
+    });
+    _saveCache();
   }
 
   Future<void> _loadData() async {
@@ -506,9 +514,11 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
         // Seccion 21
         _observacionesController.text = cached['observacionficha']?.toString() ?? '';
         // Seccion 22
-        _fechaEncuestaController.text = cached['fechaencuesta']?.toString() ?? '';
-        // Seccion 23
-        _empadronadorId = cached['empadronador']?.toString() ?? '';
+        if (cached['fechaencuesta'] == null || cached['fechaencuesta'] == '') {
+          _fechaEncuestaController.text = formatDate(DateTime.now());
+        } else {
+          _fechaEncuestaController.text = cached['fechaencuesta'];
+        }
         // Seccion 24
         final supervisorId = cached['supervisor'] ?? '';
         _selectedSupervisor = _supervisores.firstWhere((supervisor) => supervisor['id'] == supervisorId);
@@ -516,7 +526,11 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
         final digitadorId = cached['digitador'] ?? '';
         _selectedDigitador = _digitadores.firstWhere((digitador) => digitador['id'] == digitadorId);
         // Seccion 26
-        _fechaDigitacionController.text = cached['fechadigitacion']?.toString() ?? '';
+        if (cached['fechadigitacion'] == null || cached['fechadigitacion'] == '') {
+          _fechaDigitacionController.text = formatDate(DateTime.now());
+        } else {
+          _fechaDigitacionController.text = cached['fechadigitacion'];
+        }
       });
     }
 
@@ -528,6 +542,7 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
   void _saveCache() async {
     if (widget.localId != null) return;
     if (_isLoadingCache) return;
+    print('hola');
 
     final data = {
       // Datos principales
@@ -699,12 +714,6 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
       _zonaAbastecimientoController,
       // Seccion 21
       _observacionesController,
-      // Seccion 22
-      _fechaEncuestaController,
-      // Seccion 23
-      _empadronadorController,
-      // Seccion 26
-      _fechaDigitacionController,
     ]) {
       controller.addListener(() {
         if (_isFillingFromApi) return;
@@ -766,8 +775,6 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
       _observacionesController,
       // Seccion 22
       _fechaEncuestaController,
-      // Seccion 23
-      _empadronadorController,
       // Seccion 26
       _fechaDigitacionController,
     ]) {
@@ -4357,6 +4364,7 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
         TextFormField(
           controller: _fechaEncuestaController,
           readOnly: true,
+          onTap: _selectFechaEncuesta,
           decoration: const InputDecoration(
             labelText: '22. Fecha de Encuesta *',
             border: OutlineInputBorder(),
@@ -4439,6 +4447,7 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
         TextFormField(
           controller: _fechaDigitacionController,
           readOnly: true,
+          onTap: _selectFechaDigitacion,
           decoration: const InputDecoration(
             labelText: '26. Fecha de Digitación',
             border: OutlineInputBorder(),
@@ -4451,5 +4460,38 @@ class _UiCadastralFormState extends State<UiCadastralForm> {
           ),
       ],
     );
+  }
+
+  String formatDate(DateTime date) {
+    return "${date.day.toString().padLeft(2, '0')}/"
+        "${date.month.toString().padLeft(2, '0')}/"
+        "${date.year}";
+  }
+
+  Future<void> _selectFechaEncuesta() async {
+    final DateTime? picked = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2000),
+      lastDate: DateTime(2100),
+    );
+
+    if (picked != null) {
+      _fechaEncuestaController.text = formatDate(picked);
+      _saveCache();
+    }
+  }
+
+  Future<void> _selectFechaDigitacion() async {
+    final DateTime? picked = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2000),
+      lastDate: DateTime(2100),
+    );
+    if (picked != null) {
+      _fechaDigitacionController.text = formatDate(picked);
+      _saveCache();
+    }
   }
 }
